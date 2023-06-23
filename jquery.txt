@@ -1,0 +1,32 @@
+npm install jquery
+Esto lo agrega al node_modules
+
+o
+
+        <!-- AGREGO LA LIBRERIA DE JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        en el html dentro de <head>
+
+npm install --save @types/jquery
+
+$("#miId");//Obtiene por id
+$("p");//Obtiene por tipo de tag, obtiene todos
+
+Si no paso parametros, recupero todo el conetido
+del elemento
+
+
+$("#miId").val();//Obtiene valor
+$("p").html();//Obtiene valor, de los que no
+tienen .value
+.value los poseen todo los que no tienen etiqueta
+de apertura y cierre
+
+
+
+$("#miId").val("valor");//Establece valor
+$("p").html("valor");//Establece valor
+
+//A TODOS LOS ELEMENTOS P DEL DOCUMENTO LES CAMBIO LA FUENTE
+    $("p").css("font-family", "arial black");
+//document.getElementsByTagName("p").style.font-family=""
